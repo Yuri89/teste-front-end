@@ -29,9 +29,15 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 A tela inicial do projeto será semelhante a esta:
 
-![Tela Inicial](https://github.com/Yuri89/teste-front-end/blob/main/image/1.png)
-![Segunda Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/2.png)
-![Terceira Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/3.png)
-![Quarta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/4.png)
-![Quinta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/5.png)
-![Sexta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/6.png)
+![Tela Inicial](https://github.com/Yuri89/teste-front-end/blob/main/image/1.jpg)
+---
+![Segunda Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/2.jpg)
+---
+![Terceira Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/3.jpg)
+---
+![Quarta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/4.jpg)
+---
+![Quinta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/5.jpg)
+---
+![Sexta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/6.jpg)
+---
