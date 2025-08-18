@@ -55,6 +55,8 @@
         
         & > div {
             & > *{
+                color: #161615;
+                font-weight: 300;
                 padding: 10px;
             }
 
@@ -79,6 +81,12 @@
             
             box-shadow: $cinza-medio -2px 0px 0px;
             padding: 25px 40px;
+
+            color: #22222296;
+
+            & > div > ul > li{
+                cursor: pointer;
+            }
         }
     }
 

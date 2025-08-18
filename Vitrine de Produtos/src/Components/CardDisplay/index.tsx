@@ -7,13 +7,10 @@ import './style.scss'
 
 export default function CardDisplay({ products }: CardData) {
     const [position, setPosition] = useState<number>(0)
-    console.log(position)
 
     function ClickLeft() {
         if (0 > (position)) {
-            console.log(position)
             setPosition(position => position + 200)
-            console.log(position)
         }else{
         setPosition(position => position = 0)
         }
@@ -22,11 +19,8 @@ export default function CardDisplay({ products }: CardData) {
     function ClickRight() {
         const count = products?.length ?? 0;
         const cal = -(count * 260) - 10;
-        console.log("o cal é:" + cal)
         if (cal < (position)) {
-            console.log(position)
             setPosition(position => position - 200)
-            console.log(position)
         }
         else{
             setPosition(position => position = -2650)

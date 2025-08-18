@@ -1,7 +1,4 @@
-import '../Styles/Global.scss'
 import Navbar from '../Components/Navbar'
-import BackgroundFirst from '../Assets/imgs/BackgroundFirst.png'
-import BackgroundSecond from '../Assets/imgs/BackgroundSecond.png'
 import BuyCategory from '../Components/BuyCategory'
 import CardDisplay from '../Components/CardDisplay'
 import Data from '../Utils/Data.json'
@@ -11,6 +8,8 @@ import Tab from '../Components/Tabs'
 import './style.scss'
 import CircleCard from '../Components/CircleCard'
 import Footer from '../Components/Footer'
+import Banner from '../Components/Banner'
+import BannerCard from '../Components/BannerCard'
 
 function Pagina() {
   const [data, setData] = useState<CardData | null>(null)
@@ -38,9 +37,7 @@ function Pagina() {
   return (
     <div className='main'>
       <Navbar />
-      <section>
-        <img src={BackgroundFirst} alt="" />
-      </section>
+      <Banner />
       <section>
         <BuyCategory />
       </section>
@@ -54,9 +51,9 @@ function Pagina() {
         <Tab />
         <CardDisplay success={data?.success ?? false} products={data?.products ?? []} />
       </section>
-      <section>
-        <img src={BackgroundSecond} alt="" />
-        <img src={BackgroundSecond} alt="" />
+      <section className='banners-card'>
+        <BannerCard/>
+        <BannerCard/>
       </section>
       <section>
         <div className='pr-first'>
@@ -65,12 +62,12 @@ function Pagina() {
             <div className='line'></div>
           </div>
         </div>
-        ver mais
+        <a className='ver-mais'>ver mais</a>
         <CardDisplay success={data?.success ?? false} products={data?.products ?? []} />
       </section>
-      <section>
-        <img src={BackgroundSecond} alt="" />
-        <img src={BackgroundSecond} alt="" />
+      <section className='banners-card'>
+        <BannerCard/>
+        <BannerCard/>
       </section>
       <section>
         <div className='pr-first'>
@@ -79,7 +76,7 @@ function Pagina() {
             <div className='line'></div>
           </div>
         </div>
-        ver mais
+        <a className='ver-mais'>ver mais</a>
         <CardDisplay success={data?.success ?? false} products={data?.products ?? []} />
       </section>
       <section>
@@ -97,7 +94,7 @@ function Pagina() {
             <div className='line'></div>
           </div>
         </div>
-        ver mais
+        <a className='ver-mais'>ver mais</a>
         <CardDisplay success={data?.success ?? false} products={data?.products ?? []} />
       </section>
       <Footer/>

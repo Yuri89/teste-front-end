@@ -8,7 +8,7 @@ export default function Tab() {
     function toggler(number: number) {
         if (selected[number] == 0) {
             setSelected([0, 0, 0, 0, 0, 0])
-            setSelected(selected => selected.map((index) => (index === number ? 1 : 0)));
+            setSelected(selected => selected.map((iten, index) => (index === number ? 1 : 0)));
         }
     }
     return (

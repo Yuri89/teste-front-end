@@ -1,0 +1,30 @@
+/* style.scss */
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000be;
+  z-index: 100;
+
+
+}
+
+.component{
+  z-index: 1;
+    
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open{
+  display: inline;
+}
+
+.close{
+  display: none;
+}

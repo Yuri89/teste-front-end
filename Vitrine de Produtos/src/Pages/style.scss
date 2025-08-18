@@ -5,9 +5,16 @@
     flex-direction: column;
 }
 
+.banners-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
 .pr-first {
 
-    padding: 10px 100px;
+    padding: 50px 100px 10px;
 
     div {
         display: flex;
@@ -43,6 +50,7 @@
     justify-content: center;
     text-align: center;
 
+
     div{
         display: flex;
         flex-direction: column;
@@ -53,7 +61,15 @@
             color: #3442B5;
             font-weight: bold;
             font-size: 30px;
-            padding: 0px 20px;
+            padding: 0px 20px 30px;
         }
     }
+}
+
+.ver-mais{
+    display: flex;
+    justify-content: center;
+    color: #3F3F40;
+    font-weight: bold;
+    cursor: pointer;
 }

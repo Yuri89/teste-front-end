@@ -1,0 +1,165 @@
+@use '../../Styles/Variaveis.scss' as *;
+
+.card-modal {
+  position: relative;
+  border-radius: 20px;
+  background-color: $branco;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 600px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  > .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $amarelo;
+    }
+  }
+
+  > div:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+  }
+
+  > div:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #3F3F40;
+    }
+
+    span.price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #3F3F40;
+    }
+
+    span.description {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    a.details {
+      color: #3442B5;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+
+      .quantity-input {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 10px;
+
+        .action-button{
+            height: 30px;
+            width: 30px;
+            font-size: 16px;
+        }
+
+        .buy {
+          width: 35px;
+          height: 35px;
+          border: none;
+          background-color: $amarelo;
+          color: #271C47;
+          font-weight: bold;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: darken($amarelo, 10%);
+          }
+        }
+
+        input[type="number"] {
+          width: 60px;
+          text-align: center;
+          padding: 8px 0;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          color: #333;
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          -moz-appearance: textfield;
+
+          &:focus {
+            border-color: $amarelo;
+            outline: none;
+          }
+        }
+      }
+
+      button.buy {
+        padding: 10px 25px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        background-color: $amarelo;
+        color: #161615;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: darken($amarelo, 10%);
+        }
+      }
+    }
+  }
+}

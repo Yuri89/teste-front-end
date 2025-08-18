@@ -1,5 +1,7 @@
 import Phone from '../../Assets/imgs/phone.png';
+import { useModal } from '../../Context/ModalProvider';
 import { ButtonComprar } from '../Button';
+import CardModal from '../CardModal';
 import './style.scss';
 
 export type CardProps = {
@@ -10,13 +12,11 @@ export type CardProps = {
 
 export default function Card(props: CardProps) {
     const btn = "comprar";
+    const {openModal} = useModal();
 
     const juros = 8;
     const desconto = 20;
 
-    function modal() {
-        return alert('test click')
-    }
 
     return (
 
@@ -31,7 +31,9 @@ export default function Card(props: CardProps) {
                     <p className='juros'>ou {juros}x de R$ {props.price / juros} sem juros</p>
                 </span>
                 <a href='/#' className='frete'>Frete grátis</a>
-                <ButtonComprar onClick={modal}>{btn.toLocaleUpperCase()}</ButtonComprar>
+                <ButtonComprar onClick={() => {
+                    openModal(<CardModal/>)
+                }}>{btn.toLocaleUpperCase()}</ButtonComprar>
             </div>
         </div>
     )
