@@ -29,9 +29,9 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 A tela inicial do projeto será semelhante a esta:
 
-![Tela Inicial](https://github.com/Yuri89/teste-front-end/blob/main/image/tela%20inicial.png)
-
-```
-
-Se você quiser, posso deixar ainda **mais profissional**, incluindo **informações sobre portas, links para o navegador e dicas de problemas comuns**. Quer que eu faça isso?
-```
+![Tela Inicial](https://github.com/Yuri89/teste-front-end/blob/main/image/1.png)
+![Segunda Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/2.png)
+![Terceira Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/3.png)
+![Quarta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/4.png)
+![Quinta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/5.png)
+![Sexta Tela](https://github.com/Yuri89/teste-front-end/blob/main/image/6.png)
