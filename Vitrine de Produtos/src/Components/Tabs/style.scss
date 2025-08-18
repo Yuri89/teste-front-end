@@ -1,0 +1,23 @@
+@use '../../Styles/Variaveis.scss' as *;
+
+.tab{
+    ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    }
+
+    ul > li{
+        padding: 10px 59px;
+        border: 1px #BDBDBD solid;
+        transition: 300ms ease-out;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .active{
+        color: $azul;
+        
+    }
+}

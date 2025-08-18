@@ -1,0 +1,63 @@
+@use '../../Styles/Variaveis.scss' as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 304px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
+
+    img {
+        height: auto;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: $second-text;
+
+
+        .nome-produto {
+            font-size: $first-text;
+            font-weight: 200;
+            color: #3F3F40;
+            margin: 8px 0;
+        }
+
+        .preco {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5px;
+            padding: 5px 0px 10px;
+
+            .full {
+                font-size: 16px;
+                font-size: small;
+                color: #808080;
+                text-decoration: line-through;
+            }
+
+            .off {
+                font-size: 20px;
+                font-size: medium;
+                color: #3F3F40;
+                font-weight: bold;
+            }
+
+            .juros {
+                color: $preto;
+            }
+        }
+
+        .frete {
+            font-size: $second-text;
+            font-weight: 400;
+            text-decoration: none;
+            color: #3442B5;
+            padding-bottom: 5px;
+        }
+    }
+}

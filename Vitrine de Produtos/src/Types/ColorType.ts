@@ -1,0 +1,1 @@
+export type ColorProps = `#${string}` | `rgb(${number},${number},${number})` | `rgba(${number},${number},${number},${number})` | `hsl(${`${number}%` | '0'},${`${number}%` | '0'},${`${number}%` | '0'})` | `hsla(${`${number}%` | '0'},${`${number}%` | '0'},${`${number}%` | '0'},${number})`;

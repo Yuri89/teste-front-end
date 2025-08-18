@@ -1,0 +1,20 @@
+@use '../../Styles/Variaveis.scss' as *;
+
+.button{
+    height: auto;
+    border: none;
+
+    background-color: $azul;
+    color: $branco;
+}
+
+.button-comprar{
+    padding: 10px 0px;
+    font-weight: bold;
+    height: auto;
+    border: none;
+    border-radius: 3px;
+
+    background-color: #3442B5;
+    color: $branco;
+}

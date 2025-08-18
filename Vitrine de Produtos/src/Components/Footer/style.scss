@@ -1,0 +1,92 @@
+@use '../../Styles/Variaveis.scss' as *;
+
+.end-page {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section:first-child {
+        background-color: #271C47;
+        color: $branco;
+
+        div:last-child {
+            form {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+
+                label {
+                    grid-column: span 3;
+                    margin-top: 10px;
+                }
+            }
+
+
+            form > input {
+                display: flex;
+                align-items: center;
+                background-color: #F6F5F2;
+                padding: 0px 20px;
+                border-radius: 10px;
+                border: none;
+                
+            }
+
+            form > button {
+                color: #161615;
+                font-weight: 600;
+                border-radius: 10px;
+                padding: 15px 40px;
+                background-color: #F7CA11;
+            }
+
+        }
+    }
+
+    section:nth-child(2){
+        display: flex;
+        justify-content: space-between;
+        background-color: #F4F4F4;
+        
+        & > div {
+            & > *{
+                padding: 10px;
+            }
+
+            & > :nth-child(3){
+                display: flex;
+                gap: 10px;
+
+                & > *{
+                    cursor: pointer;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+
+            max-width: 400px;
+        }
+
+        & > nav{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            
+            box-shadow: $cinza-medio -2px 0px 0px;
+            padding: 25px 40px;
+        }
+    }
+
+    section:last-child{
+        display: flex;
+        justify-content: center;
+        & > span{
+            text-align: center;
+        }
+    }
+}
